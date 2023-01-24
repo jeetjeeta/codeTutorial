@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="code.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="stats.css" />
+    <link rel="stylesheet" href="comment_overlay.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Tutorial</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="stats">
+        <span class="views"
+          ><i class="fas fa-eye"> </i>
+          <p id="views">2</p></span
+        >
+        <span class="like" onclick="countLikes()"
+          ><i class="fas fa-thumbs-up"> </i>
+          <p id="like">1</p></span
+        >
+        <span class="dislike" onclick="countDislikes()"
+          ><i class="fas fa-thumbs-down"> </i>
+          <p id="dislike">0</p></span
+        >
+        <span class="comment" onclick="toggleComment()"
+          ><i class="fas fa-comments"> </i>
+          <p id="commentP">0</p></span
+        >
+      </div>
+
+      <div class="comments-overlay">
+        <div class="commentsPosted">
+          <h4>Comments</h4>
+          <ul class="commentsPosted_list">
+            <!-- <li>
+              Nice<br />
+              <span class="date">Date Time</span>
+            </li>
+            <li>Nice site</li>
+            <li>Nice</li>
+            <li>Nice site</li>
+            <li>Nice</li>
+            <li>Nice site</li> -->
+          </ul>
+        </div>
+
+        <input
+          type="text"
+          id="comment"
+          maxlength="150"
+          placeholder="Type Comment Here"
+        />
+        <br />
+        <button id="commentSubmit" onclick="submitComment()">Submit</button>
+        <button id="commentCancel" onclick="cancelComment()">Cancel</button>
+      </div>
+
+      <header>
+        <h1 class="main-heading">Code With Lust</h1>
+      </header>
+
+      <main>
+        <h2 class="intro_heading">Introduction</h2>
+        <p class="intro_para">
+          Bored of traditional shitty tutorials, try this new flavor. These
+          tutorial may not be good as paid courses but will keep u on fire.
+          Those who can focus on learning as well as 👉 👌 must not leave this
+          oppurtunity.
+        </p>
+        <br />
+
+        <div>
+          <iframe
+            class="intro-video"
+            src="https://www.youtube.com/embed/qDrrIUujxsw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </main>
+      <!-- <br />
+      <br />
+      <br /> -->
+
+      <!-- <div class="section-container">
+        <h3>Internet</h3>
+        <section class="section">
+          <div class="videos">
+            <div class="video-container-section">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/_XI0ODNPqk4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> -->
+    </div>
+
+    <script src="videoDatabase.js"></script>
+    <script src="script.js"></script>
+    <script src="cookies.js"></script>
+    <script src="scriptStats.js"></script>
+    <script src="/comments1.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/cd108154fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

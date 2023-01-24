@@ -1,0 +1,61 @@
+.stats {
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding: 0.5rem;
+
+  background-color: rgba(137, 207, 240, 0.3);
+}
+
+.stats span {
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.stats span p {
+  margin: 0;
+  margin-left: 0.2rem;
+}
+
+.stats span i {
+  transition: all 0.4s ease-in-out;
+}
+
+.like,
+.dislike,
+.comment {
+  cursor: pointer;
+  /* color: var(--text-color); */
+  /* color: aquamarine; */
+  transition: all 0.2s ease-in-out;
+}
+
+.like.liked i {
+  color: blue;
+}
+
+.dislike.disliked i {
+  color: red;
+  /* transform: scale(1.1); */
+}
+
+.like:hover i {
+  /* color: blue; */
+  transform: scale(1.3);
+}
+
+.dislike:hover i {
+  /* color: red; */
+  transform: scale(1.3);
+}
+
+.comment:hover {
+  transform: scale(1.3);
+}
+
+.comment.enabled i {
+  /* outline: 1px solid grey; */
+  -webkit-text-stroke: 1px blue;
+}
